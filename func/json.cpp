@@ -1,5 +1,6 @@
 #include "../header/json.h"
 #include <fstream>
+#include <iomanip>
 
 string PATH="example/data.json";
 
@@ -27,4 +28,17 @@ void setData(json &Data,string key){
     all[key]=Data;
 
     file<<setw(4)<<all;
+}
+
+void setAllData(json &Data){
+    ofstream file(PATH);
+    file<<setw(4)<<Data;
+}
+
+int lenData(json &Data){
+    int i;
+    for (auto it = Data.begin(); it != Data.end(); ++it) {
+        i++;
+    }
+    return i;
 }
