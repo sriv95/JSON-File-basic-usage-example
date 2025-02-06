@@ -66,20 +66,32 @@
     ],
     "Menus": [
         [
-            "Menu#1",
-            50
+            "Minced-pork-omelette",
+            40,
+            "Dishes",
+            ["Rice","Eggs","Minced pork"],
+            [0.15,3,0.2]
         ],
         [
-            "Menu#2",
-            40
+            "American-style fried rice",
+            50,
+            "Dishes",
+            ["Rice","Ham","Eggs","Green peas"],
+            [0.15,0.1,1,0.05]
         ],
         [
-            "Menu#1",
-            30
+            "Iced Lemon Tea",
+            30,
+            "Drinks",
+            ["Black Tea","Lemon"],
+            [0.2,1]
         ],
         [
-            "Menu#4",
-            5
+            "Fresh Water Bottle",
+            10,
+            "Drinks",
+            ["Water Bottle"],
+            [1]
         ]
     ],
     "Reservation": [
@@ -94,12 +106,16 @@
         [
             "Menu#1",
             1,
-            50
+            50,
+            "06-02-2025",
+            "9:42"
         ],
         [
             "Eggs",
             100,
-            -300
+            -300,
+            "06-02-2025",
+            "19:42"
         ]
     ],
     "Stocks": [
@@ -140,14 +156,17 @@
         {
             "Bills": [
                 [
-                    "Menu#1",
-                    "Menu#2"
+                    "Minced-pork-omelette",
+                    "American-style fried rice",
+                    "Iced Lemon Tea"
                 ],
                 [
                     1,
-                    1
+                    1,
+                    2
                 ],
                 [
+                    0,
                     0,
                     0
                 ]
@@ -159,16 +178,16 @@
         {
             "Bills": [
                 [
-                    "Menu#1",
-                    "Menu#2",
-                    "Menu#3",
-                    "Menu#4"
+                    "Minced-pork-omelette",
+                    "Minced-pork-omelette",
+                    "American-style fried rice",
+                    "Fresh Water Bottle"
                 ],
                 [
+                    2,
                     1,
                     1,
-                    1,
-                    1
+                    4
                 ],
                 [
                     10,
